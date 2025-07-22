@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="controls_if" id="J?Cd4Y:{W9{g}).oel)8" disabled-reasons="pxt_automatic_disabled" x="0" y="0"><mutation elseif="1" else="1"></mutation><comment pinned="false" h="80" w="160">Holding down the A button makes the straight-mouth face become a smiley face. Holding the B button down makes the straight-mouth face become a frown face. The face returns to a straight-mouth face whenever a button is released.</comment><value name="IF0"><shadow type="logic_boolean" id="IZM#tQDW{+Ur9Gp(e-(X"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="[,Q_tXCaFm0|+IUqo/X;" disabled-reasons="pxt_automatic_disabled"><field name="NAME">Button.A</field><comment pinned="false" h="80" w="160">Holding the A button down shows a smiley face.</comment></block></value><statement name="DO0"><block type="device_show_leds" id="X-_FUgZMefpKxr=O9.k%" disabled-reasons="pxt_automatic_disabled"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement><value name="IF1"><shadow type="logic_boolean" id="HPCH}Pc0BJ`e_/=BZC0_"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="/=urS,]2F~vTp[$H8e]t" disabled-reasons="pxt_automatic_disabled"><field name="NAME">Button.B</field><comment pinned="false" h="80" w="160">Holding the B button down shows a frown face.</comment></block></value><statement name="DO1"><block type="device_show_leds" id="/B:.)wXn1wMthSTrAYDx" disabled-reasons="pxt_automatic_disabled"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="Cz=QD|IKz$[:,#r-eha?" disabled-reasons="pxt_automatic_disabled"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><comment pinned="false" h="80" w="160">If no buttons are pressed, a straight-mouth face is shown on the LED grid.</comment></block></statement></block></xml>
